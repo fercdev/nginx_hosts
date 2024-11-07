@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  nginx_hosts:
+    image: skynhero/nginx_personalizado:latest
+    container_name: servidor_nginx
+    ports:
+      - 8081:8081
+      - 8082:8082
+      - 8083:8083
+    environment:
+      SITIO_1_NOMBRE: "NOMBRE SITIO"
+      SITIO_2_NOMBRE: "NOMBRE SITIO"
+      SITIO_3_NOMBRE: "NOMBRE SITIO"

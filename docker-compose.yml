@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  nginx_hosts:
+    image: fercdevv/nginx_host:latest
+    container_name: servidor_nginx
+    ports:
+      - 8081:8081
+      - 8082:8082
+      - 8083:8083
