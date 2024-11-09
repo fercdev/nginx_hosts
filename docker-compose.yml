@@ -2,9 +2,15 @@ version: "3"
 
 services:
   nginx_hosts:
-    image: fercdevv/nginx_host:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: servidor_nginx
     ports:
       - 8081:8081
       - 8082:8082
       - 8083:8083
+    environment:
+      VARIABLE_1: Hello world 1!!
+      VARIABLE_2: Hello world 2!!
+      VARIABLE_3: Hello world 3!!
